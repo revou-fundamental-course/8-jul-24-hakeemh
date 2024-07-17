@@ -1,6 +1,6 @@
-
+// Fungsi hitung BMI
 function hitung(){
-
+		// Definisikan variabel
 		var jk = document.getElementById("jk").value;
 		var berat = document.getElementById("berat").value;
 		var usia = document.getElementById("usia").value;
@@ -9,6 +9,7 @@ function hitung(){
 		var bmi;
 		var tinggi_pangkat = Math.pow((tinggi/100),2);
 
+		// rumus BMI
 		bmi = berat/tinggi_pangkat;
 
 		// input validation
@@ -78,8 +79,8 @@ function hitung(){
 	}
 }
 
+// Fungsi Reset input form
 function reset(){
-
 		document.getElementById("jk").checked = 'true';
 		document.getElementById("berat").value = '';
 		document.getElementById("usia").value = '';
