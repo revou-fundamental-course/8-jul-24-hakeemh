@@ -11,11 +11,8 @@ function hitung(){
 
 		bmi = berat/tinggi_pangkat;
 
-		// console.log(jk);
-		// console.log(berat);
-		// console.log(usia);
-		// console.log(tinggi_pangkat);
-		// console.log(bmi);
+		// input validation
+		if (berat != null && berat != '' && usia != null && usia != '' && tinggi != null && tinggi != '') {
 
 		document.getElementById("beranda").style.display = 'none';
 		document.getElementById("hasil").style.display = 'inline';
@@ -76,7 +73,9 @@ function hitung(){
 		document.getElementById("ket6").innerHTML = ket6;
 		document.getElementById("ket7").innerHTML = ket7;
 		document.getElementById("ket8").innerHTML = ket8;
-
+	}else{
+		alert("Inputan Anda tidak lengkap");
+	}
 }
 
 function reset(){
