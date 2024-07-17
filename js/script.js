@@ -69,7 +69,7 @@ function hitung(){
 		}
 
 		document.getElementById("ket1").innerHTML = ket1;
-		document.getElementById("ket2").innerHTML = ket2;
+		document.getElementById("ket2").innerHTML = ket2.toFixed(1);
 		document.getElementById("ket3").innerHTML = ket3;
 		document.getElementById("ket4").innerHTML = ket4;
 		document.getElementById("ket5").innerHTML = ket5;
